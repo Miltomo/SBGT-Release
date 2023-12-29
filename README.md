@@ -12,7 +12,7 @@ SBG(Shining!BeautifulGirls-Tools)，是本人自用自制的手游《闪耀！�
 ## 软件下载
 ### 注意事项（重要）
 1. 软件的框架为[.NET7.0](https://dotnet.microsoft.com/zh-cn/download/dotnet/7.0)，您的系统必须安装才能运行。  
-建议在**运行报错后**点击"是"自动下载合适的版本。
+建议在**运行报错后**点击“是”自动下载合适的版本。
 2. 您**必须**到[SBGT-Runtimes](https://github.com/Miltomo/SBGT-Runtimes)下载运行时。否则程序无法正常运行。  
 且必须按照[**说明**](https://github.com/Miltomo/SBGT-Release/blob/main/runtimes/%E9%87%8D%E8%A6%81.md)进行解压，否则无法识别。
 
@@ -23,7 +23,7 @@ SBG(Shining!BeautifulGirls-Tools)，是本人自用自制的手游《闪耀！�
 [v0.9.0(测试版)]()
 
 ### 使用说明
-解压后双击exe即可运行
+解压后双击exe即可运行。您可能需要点击“是”来下载.NET。
 
 ## 软件功能
 - 自动、可靠的设备识别。软件自动检测当前运行的设备，无论是模拟器还是手机都可以接管控制。  
