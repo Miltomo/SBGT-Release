@@ -18,9 +18,8 @@ SBGT(Shining!BeautifulGirls-Tools)，是本人自用自制的手游《闪耀！�
 
 ### 下载地址
 1. 点击项目右上方 **code -> download ZIP** 即可开始下载（为最新版本）
-2. 点击右侧 **Release** 即可选择版本进行下载
-3. 直接点击下载  
-[v0.9.0(测试版)]()
+2. 点击右侧 **Release** 即可选择版本进行下载  
+[v0.9.0(测试版)](https://github.com/Miltomo/SBGT-Release/releases/tag/v0.9.0)
 
 ### 使用说明
 解压后双击exe即可运行。如果报错，您需要点击“是”来下载.NET。
