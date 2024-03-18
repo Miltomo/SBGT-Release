@@ -8,35 +8,237 @@
     ".NETCoreApp,Version=v7.0": {
       "Shining BeautifulGirls/1.0.0": {
         "dependencies": {
-          "Microsoft.ML": "1.7.1",
-          "Microsoft.ML.FastTree": "1.7.1",
-          "Microsoft.ML.Vision": "1.7.1",
+          "Microsoft.ML": "3.0.1",
+          "Microsoft.ML.FastTree": "3.0.1",
+          "Microsoft.ML.ImageAnalytics": "3.0.1",
+          "Microsoft.ML.TorchSharp": "0.21.1",
+          "Microsoft.ML.Vision": "3.0.1",
           "OpenCvSharp4": "4.8.0.20230708",
           "OpenCvSharp4.Extensions": "4.8.0.20230708",
           "OpenCvSharp4.Windows": "4.8.0.20230708",
           "OpenCvSharp4.WpfExtensions": "4.8.0.20230708",
           "OpenCvSharp4.runtime.win": "4.8.0.20230708",
           "PaddleOCRSharp": "4.1.0",
-          "SciSharp.TensorFlow.Redist": "2.3.1"
+          "SciSharp.TensorFlow.Redist": "2.3.1",
+          "TorchSharp-cpu": "0.101.5"
         },
         "runtime": {
           "Shining BeautifulGirls.dll": {}
         }
       },
-      "Google.Protobuf/3.19.4": {
+      "Google.Protobuf/3.21.9": {
         "runtime": {
           "lib/net5.0/Google.Protobuf.dll": {
-            "assemblyVersion": "3.19.4.0",
-            "fileVersion": "3.19.4.0"
+            "assemblyVersion": "3.21.9.0",
+            "fileVersion": "3.21.9.0"
           }
         }
       },
-      "Microsoft.ML/1.7.1": {
+      "libtorch-cpu/2.1.0.1": {
         "dependencies": {
-          "Microsoft.ML.CpuMath": "1.7.1",
-          "Microsoft.ML.DataView": "1.7.1",
-          "Newtonsoft.Json": "12.0.1",
-          "System.CodeDom": "4.4.0",
+          "libtorch-cpu-linux-x64": "2.1.0.1",
+          "libtorch-cpu-osx-x64": "2.1.0.1",
+          "libtorch-cpu-win-x64": "2.1.0.1"
+        }
+      },
+      "libtorch-cpu-linux-x64/2.1.0.1": {
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libbackend_with_compiler.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libc10.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libfbjni.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libgomp-a34b3233.so.1": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libjitbackend_test.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libnnapi_backend.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libpytorch_jni.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libshm.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libtorch.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libtorch_cpu.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libtorch_global_deps.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libtorch_python.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libtorchbind_test.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "libtorch-cpu-osx-x64/2.1.0.1": {
+        "runtimeTargets": {
+          "runtimes/osx-x64/native/libbackend_with_compiler.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libc10.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libfbjni.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libiomp5.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libjitbackend_test.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libpytorch_jni.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libshm.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libtorch.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libtorch_cpu.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libtorch_global_deps.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libtorch_python.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libtorchbind_test.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "libtorch-cpu-win-x64/2.1.0.1": {
+        "runtimeTargets": {
+          "runtimes/win-x64/native/asmjit.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/c10.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/fbgemm.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/fbjni.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libiomp5md.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "5.0.2023.118"
+          },
+          "runtimes/win-x64/native/libiompstubs5md.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "5.0.2023.118"
+          },
+          "runtimes/win-x64/native/pytorch_jni.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/torch.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/torch_cpu.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/torch_global_deps.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/uv.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Microsoft.ML/3.0.1": {
+        "dependencies": {
+          "Microsoft.ML.CpuMath": "3.0.1",
+          "Microsoft.ML.DataView": "3.0.1",
+          "Newtonsoft.Json": "13.0.1",
+          "System.CodeDom": "4.5.0",
           "System.Collections.Immutable": "1.5.0",
           "System.Memory": "4.5.5",
           "System.Reflection.Emit.Lightweight": "4.3.0",
@@ -45,31 +247,31 @@
         "runtime": {
           "lib/netstandard2.0/Microsoft.ML.Core.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.700.122.15804"
+            "fileVersion": "3.0.124.6804"
           },
           "lib/netstandard2.0/Microsoft.ML.Data.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.700.122.15804"
+            "fileVersion": "3.0.124.6804"
           },
           "lib/netstandard2.0/Microsoft.ML.KMeansClustering.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.700.122.15804"
+            "fileVersion": "3.0.124.6804"
           },
           "lib/netstandard2.0/Microsoft.ML.PCA.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.700.122.15804"
+            "fileVersion": "3.0.124.6804"
           },
           "lib/netstandard2.0/Microsoft.ML.StandardTrainers.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.700.122.15804"
+            "fileVersion": "3.0.124.6804"
           },
           "lib/netstandard2.0/Microsoft.ML.Transforms.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.700.122.15804"
+            "fileVersion": "3.0.124.6804"
           },
           "lib/netstandard2.0/Microsoft.ML.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.700.122.15804"
+            "fileVersion": "3.0.124.6804"
           }
         },
         "runtimeTargets": {
@@ -98,27 +300,35 @@
             "assetType": "native",
             "fileVersion": "0.0.0.0"
           },
+          "runtimes/win-arm64/native/LdaNative.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.2100.124.6804"
+          },
           "runtimes/win-x64/native/LdaNative.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "0.1900.122.15804"
+            "fileVersion": "0.2100.124.6804"
           },
           "runtimes/win-x86/native/LdaNative.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "0.1900.122.15804"
+            "fileVersion": "0.2100.124.6804"
           }
         }
       },
-      "Microsoft.ML.CpuMath/1.7.1": {
+      "Microsoft.ML.CpuMath/3.0.1": {
+        "dependencies": {
+          "System.Numerics.Tensors": "8.0.0"
+        },
         "runtime": {
-          "lib/netcoreapp3.1/Microsoft.ML.CpuMath.dll": {
+          "lib/net6.0/Microsoft.ML.CpuMath.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.700.122.15804"
+            "fileVersion": "3.0.124.6804"
           }
         }
       },
-      "Microsoft.ML.DataView/1.7.1": {
+      "Microsoft.ML.DataView/3.0.1": {
         "dependencies": {
           "System.Collections.Immutable": "1.5.0",
           "System.Memory": "4.5.5"
@@ -126,18 +336,18 @@
         "runtime": {
           "lib/netstandard2.0/Microsoft.ML.DataView.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.700.122.15804"
+            "fileVersion": "3.0.124.6804"
           }
         }
       },
-      "Microsoft.ML.FastTree/1.7.1": {
+      "Microsoft.ML.FastTree/3.0.1": {
         "dependencies": {
-          "Microsoft.ML": "1.7.1"
+          "Microsoft.ML": "3.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.ML.FastTree.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.700.122.15804"
+            "fileVersion": "3.0.124.6804"
           }
         },
         "runtimeTargets": {
@@ -154,19 +364,34 @@
           "runtimes/win-x64/native/FastTreeNative.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "0.1900.122.15804"
+            "fileVersion": "0.2100.124.6804"
           },
           "runtimes/win-x86/native/FastTreeNative.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "0.1900.122.15804"
+            "fileVersion": "0.2100.124.6804"
           }
         }
       },
-      "Microsoft.ML.TensorFlow/1.7.1": {
+      "Microsoft.ML.ImageAnalytics/3.0.1": {
         "dependencies": {
-          "Google.Protobuf": "3.19.4",
-          "Microsoft.ML": "1.7.1",
+          "Microsoft.ML": "3.0.1",
+          "SkiaSharp": "2.88.6",
+          "SkiaSharp.NativeAssets.Linux.NoDependencies": "2.88.6",
+          "System.Buffers": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.ML.ImageAnalytics.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "3.0.124.6804"
+          }
+        }
+      },
+      "Microsoft.ML.TensorFlow/3.0.1": {
+        "dependencies": {
+          "Google.Protobuf": "3.21.9",
+          "Microsoft.ML": "3.0.1",
           "System.IO.FileSystem.AccessControl": "4.5.0",
           "System.Security.Principal.Windows": "4.5.0",
           "TensorFlow.NET": "0.20.1"
@@ -174,29 +399,55 @@
         "runtime": {
           "lib/netstandard2.0/Microsoft.ML.TensorFlow.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.700.122.15804"
+            "fileVersion": "3.0.124.6804"
           }
         }
       },
-      "Microsoft.ML.Vision/1.7.1": {
+      "Microsoft.ML.Tokenizers/0.21.1": {
         "dependencies": {
-          "Microsoft.ML.TensorFlow": "1.7.1"
+          "System.Text.Json": "6.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.ML.Tokenizers.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "0.2100.124.6804"
+          }
+        }
+      },
+      "Microsoft.ML.TorchSharp/0.21.1": {
+        "dependencies": {
+          "Microsoft.ML": "3.0.1",
+          "Microsoft.ML.ImageAnalytics": "3.0.1",
+          "Microsoft.ML.Tokenizers": "0.21.1",
+          "System.Memory": "4.5.5",
+          "TorchSharp": "0.101.5"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.ML.TorchSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "0.2100.124.6804"
+          }
+        }
+      },
+      "Microsoft.ML.Vision/3.0.1": {
+        "dependencies": {
+          "Microsoft.ML.TensorFlow": "3.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.ML.Vision.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.700.122.15804"
+            "fileVersion": "3.0.124.6804"
           }
         }
       },
       "Microsoft.NETCore.Platforms/2.0.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
       "Microsoft.Win32.SystemEvents/7.0.0": {},
-      "Newtonsoft.Json/12.0.1": {
+      "Newtonsoft.Json/13.0.1": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.1.22727"
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
           }
         }
       },
@@ -279,7 +530,7 @@
       },
       "PaddleOCRSharp/4.1.0": {
         "dependencies": {
-          "Newtonsoft.Json": "12.0.1",
+          "Newtonsoft.Json": "13.0.1",
           "System.Drawing.Common": "7.0.0"
         },
         "runtime": {
@@ -291,7 +542,7 @@
       },
       "Protobuf.Text/0.4.0": {
         "dependencies": {
-          "Google.Protobuf": "3.19.4"
+          "Google.Protobuf": "3.21.9"
         },
         "runtime": {
           "lib/netstandard2.0/Protobuf.Text.dll": {
@@ -329,7 +580,83 @@
           }
         }
       },
-      "System.CodeDom/4.4.0": {},
+      "SharpZipLib/1.4.0": {
+        "runtime": {
+          "lib/net6.0/ICSharpCode.SharpZipLib.dll": {
+            "assemblyVersion": "1.4.0.12",
+            "fileVersion": "1.4.0.12"
+          }
+        }
+      },
+      "SkiaSharp/2.88.6": {
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "2.88.6",
+          "SkiaSharp.NativeAssets.macOS": "2.88.6"
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.dll": {
+            "assemblyVersion": "2.88.0.0",
+            "fileVersion": "2.88.6.0"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Linux.NoDependencies/2.88.6": {
+        "dependencies": {
+          "SkiaSharp": "2.88.6"
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libSkiaSharp.so": {
+            "rid": "linux-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-arm64/native/libSkiaSharp.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-musl-x64/native/libSkiaSharp.so": {
+            "rid": "linux-musl-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libSkiaSharp.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.macOS/2.88.6": {
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/2.88.6": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "System.Buffers/4.5.1": {},
+      "System.CodeDom/4.5.0": {},
       "System.Collections.Immutable/1.5.0": {},
       "System.Drawing.Common/7.0.0": {
         "dependencies": {
@@ -352,6 +679,14 @@
         }
       },
       "System.Memory/4.5.5": {},
+      "System.Numerics.Tensors/8.0.0": {
+        "runtime": {
+          "lib/net7.0/System.Numerics.Tensors.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
       "System.Reflection/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
@@ -408,6 +743,17 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Text.Encodings.Web/6.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        }
+      },
+      "System.Text.Json/6.0.1": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0"
+        }
+      },
       "System.Threading.Channels/4.7.1": {},
       "System.Threading.Tasks/4.3.0": {
         "dependencies": {
@@ -418,7 +764,7 @@
       },
       "TensorFlow.NET/0.20.1": {
         "dependencies": {
-          "Google.Protobuf": "3.19.4",
+          "Google.Protobuf": "3.21.9",
           "NumSharp.Lite": "0.1.8",
           "Protobuf.Text": "0.4.0"
         },
@@ -427,6 +773,43 @@
             "assemblyVersion": "0.20.1.0",
             "fileVersion": "0.20.1.0"
           }
+        }
+      },
+      "TorchSharp/0.101.5": {
+        "dependencies": {
+          "Google.Protobuf": "3.21.9",
+          "SharpZipLib": "1.4.0",
+          "SkiaSharp": "2.88.6",
+          "System.Memory": "4.5.5"
+        },
+        "runtime": {
+          "lib/net6.0/TorchSharp.dll": {
+            "assemblyVersion": "0.101.5.0",
+            "fileVersion": "0.101.5.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libLibTorchSharp.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libLibTorchSharp.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/LibTorchSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "TorchSharp-cpu/0.101.5": {
+        "dependencies": {
+          "TorchSharp": "0.101.5",
+          "libtorch-cpu": "2.1.0.1"
         }
       }
     }
@@ -437,54 +820,103 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Google.Protobuf/3.19.4": {
+    "Google.Protobuf/3.21.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fd07/ykL4O4FhqrZIELm5lmiyOHfdPg9+o+hWr6tcfRdS7tHXnImg/2wtogLzlW2eEmr0J7j6ZrZvaWOLiJbxQ==",
-      "path": "google.protobuf/3.19.4",
-      "hashPath": "google.protobuf.3.19.4.nupkg.sha512"
+      "sha512": "sha512-OTpFujTgkmqMLbg3KT7F/iuKi1rg6s5FCS2M9XcVLDn40zL8wgXm37CY/F6MeOEXKjdcnXGCN/h7oyMkVydVsg==",
+      "path": "google.protobuf/3.21.9",
+      "hashPath": "google.protobuf.3.21.9.nupkg.sha512"
     },
-    "Microsoft.ML/1.7.1": {
+    "libtorch-cpu/2.1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-t33nUR6A8VwYMInbsEM5eSGJaHWdScikAX7mER0Yh0H4e85W7FRw0KBlCixHHuivSF2y7ez+2IGpfb2PUgVVow==",
-      "path": "microsoft.ml/1.7.1",
-      "hashPath": "microsoft.ml.1.7.1.nupkg.sha512"
+      "sha512": "sha512-SzckGCxIXSJQ2l2f7NaO3gFzNrgrxmYz248inHPZ3z7qMLqiKvTNCRVDNlMiKwLsI5x3wRzpsOwXrZT1d+SXgA==",
+      "path": "libtorch-cpu/2.1.0.1",
+      "hashPath": "libtorch-cpu.2.1.0.1.nupkg.sha512"
     },
-    "Microsoft.ML.CpuMath/1.7.1": {
+    "libtorch-cpu-linux-x64/2.1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kkUm/o1pBFAtRI+5LRwtJpvXhf8l8YyeQ8OYZNkTGrn5exn5C3YrwrRRX3fDz7yPPKA38XY4EPy2WVltArO0aw==",
-      "path": "microsoft.ml.cpumath/1.7.1",
-      "hashPath": "microsoft.ml.cpumath.1.7.1.nupkg.sha512"
+      "sha512": "sha512-gUdsUJMKdRaP0rkwYaaUhfP/Ue/hWM40qhWyhnkUJSk0Wc+BqQRoN/YlEm2PVyPvYTGQsAuaYR8v9K0uOxCWiA==",
+      "path": "libtorch-cpu-linux-x64/2.1.0.1",
+      "hashPath": "libtorch-cpu-linux-x64.2.1.0.1.nupkg.sha512"
     },
-    "Microsoft.ML.DataView/1.7.1": {
+    "libtorch-cpu-osx-x64/2.1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-j7BwSzNJUjxI8aSkzv4yCi0/kem1mYFVWiuLQcG0vcMEs3BNqvkunt+qdRmUMYuPY7/9AK22a70laAxjcJ2GGA==",
-      "path": "microsoft.ml.dataview/1.7.1",
-      "hashPath": "microsoft.ml.dataview.1.7.1.nupkg.sha512"
+      "sha512": "sha512-LpgbGL8hLhunAQHtDvfLlcbAPmKxxyHl9LqXMSKpe/LhJdfBJa1uJxIHsb00cVTef53nUnP1X3/I6MHhAwSZHw==",
+      "path": "libtorch-cpu-osx-x64/2.1.0.1",
+      "hashPath": "libtorch-cpu-osx-x64.2.1.0.1.nupkg.sha512"
     },
-    "Microsoft.ML.FastTree/1.7.1": {
+    "libtorch-cpu-win-x64/2.1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xg0UW0fq6ZuaxIeAS5osgIX4Nb8xyk6UBD/Ier3mhGRdU5mnhF7Nhv5KHhy2NXRA8o9JzLfl2ocVU9zT6D9EYw==",
-      "path": "microsoft.ml.fasttree/1.7.1",
-      "hashPath": "microsoft.ml.fasttree.1.7.1.nupkg.sha512"
+      "sha512": "sha512-zh9Ll+DefpXfMzaaEzHgtY3Q9iDi6NHTnETI0Jah5jGiPrzphTidsVxLC+njAeeThhFGRakx4CMwPqJFMvfw7A==",
+      "path": "libtorch-cpu-win-x64/2.1.0.1",
+      "hashPath": "libtorch-cpu-win-x64.2.1.0.1.nupkg.sha512"
     },
-    "Microsoft.ML.TensorFlow/1.7.1": {
+    "Microsoft.ML/3.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-b0wOkjf2kfpLnjHLFfrghyitYERu9Kmd60+PKjLD8lq0Pp7Pg9232h1UPk8HcmbP9QVprg+UXOlGxR9B0O90YQ==",
-      "path": "microsoft.ml.tensorflow/1.7.1",
-      "hashPath": "microsoft.ml.tensorflow.1.7.1.nupkg.sha512"
+      "sha512": "sha512-AE4DFwsDNVM5+2RVH3X9mRsqPSs+DrEd7TVA5TyLxPEerQC8wl5YTVQOVMsWCp2AroWGXEIny8xyXdOXfC+9BA==",
+      "path": "microsoft.ml/3.0.1",
+      "hashPath": "microsoft.ml.3.0.1.nupkg.sha512"
     },
-    "Microsoft.ML.Vision/1.7.1": {
+    "Microsoft.ML.CpuMath/3.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/KtRQn+ZpSMU9w8lwwVm/A0Ls9KzDpdpZtwiSob0GjRKeEY4fJmIxsZlxmNuHnl9ZrfBraL52RJp6UoQqbKR2A==",
-      "path": "microsoft.ml.vision/1.7.1",
-      "hashPath": "microsoft.ml.vision.1.7.1.nupkg.sha512"
+      "sha512": "sha512-uVDD37oZMzPOtSpiACtVSOin7++4qohkAhsMO2l+90AToNPjatKTd6XiJoVI3+k7gxnP6UL7WJSafWOq4/s2KQ==",
+      "path": "microsoft.ml.cpumath/3.0.1",
+      "hashPath": "microsoft.ml.cpumath.3.0.1.nupkg.sha512"
+    },
+    "Microsoft.ML.DataView/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mkZt1r6Nx5CAoD3klhC7VMQFzwWMHHjoYpv3X9u+GMvTMbSRaDdiA88HUoOzT7kCeq4/L1nKctmrByhLK28Xjw==",
+      "path": "microsoft.ml.dataview/3.0.1",
+      "hashPath": "microsoft.ml.dataview.3.0.1.nupkg.sha512"
+    },
+    "Microsoft.ML.FastTree/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/prGDy12z/jX8/lAfGpj0ukllAtqgR81FJDpjiZwS435xVC/og8RO7rRcXt5suy2B4grlkN7C+eo4Xfh3sQr6A==",
+      "path": "microsoft.ml.fasttree/3.0.1",
+      "hashPath": "microsoft.ml.fasttree.3.0.1.nupkg.sha512"
+    },
+    "Microsoft.ML.ImageAnalytics/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yWWydErzHNRK44T5K+VIahyeDe9I8r7Ii2qgY7e7tkUg1CFiBje+t8MTxXm04VIXI/a0WCXABdUJrTwV1FM9xg==",
+      "path": "microsoft.ml.imageanalytics/3.0.1",
+      "hashPath": "microsoft.ml.imageanalytics.3.0.1.nupkg.sha512"
+    },
+    "Microsoft.ML.TensorFlow/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cB5/b3xSUVpW5PxbocrZyFmXeATJ6PRmFTxbaT/AT5zI2OuLdKrJZN1GxKbZcoUSetnQtft7uv2SoEglAs14tw==",
+      "path": "microsoft.ml.tensorflow/3.0.1",
+      "hashPath": "microsoft.ml.tensorflow.3.0.1.nupkg.sha512"
+    },
+    "Microsoft.ML.Tokenizers/0.21.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-d9KtK2lLJ1bZvfqugoyl356qtZVYFpB4Ik6dvhB9XqVIjn1Dvv9KxJlT3yPVj5fDfRCjVU7NrhER2l+c9OjRbA==",
+      "path": "microsoft.ml.tokenizers/0.21.1",
+      "hashPath": "microsoft.ml.tokenizers.0.21.1.nupkg.sha512"
+    },
+    "Microsoft.ML.TorchSharp/0.21.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TVKjr3VtJbD5WA1wADVJbIrfeLFkUEYL2zvYK5F4sNoG/1GZRXpEGuS/SeIl4U4PpnTSDq5c//fygt5az9oogA==",
+      "path": "microsoft.ml.torchsharp/0.21.1",
+      "hashPath": "microsoft.ml.torchsharp.0.21.1.nupkg.sha512"
+    },
+    "Microsoft.ML.Vision/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mktiZ7oX8MyEZOj29dUWwniqM7Z0fExTu+CM7e4iccL8WIpl6HVhP3hm8euQIfZ4ffPGLvWC/UKgO9VoFNR0XA==",
+      "path": "microsoft.ml.vision/3.0.1",
+      "hashPath": "microsoft.ml.vision.3.0.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/2.0.0": {
       "type": "package",
@@ -507,12 +939,12 @@
       "path": "microsoft.win32.systemevents/7.0.0",
       "hashPath": "microsoft.win32.systemevents.7.0.0.nupkg.sha512"
     },
-    "Newtonsoft.Json/12.0.1": {
+    "Newtonsoft.Json/13.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
-      "path": "newtonsoft.json/12.0.1",
-      "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
     },
     "NumSharp.Lite/0.1.8": {
       "type": "package",
@@ -577,12 +1009,54 @@
       "path": "scisharp.tensorflow.redist/2.3.1",
       "hashPath": "scisharp.tensorflow.redist.2.3.1.nupkg.sha512"
     },
-    "System.CodeDom/4.4.0": {
+    "SharpZipLib/1.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2sCCb7doXEwtYAbqzbF/8UAeDRMNmPaQbU2q50Psg1J9KzumyVVCgKQY8s53WIPTufNT0DpSe9QRvVjOzfDWBA==",
-      "path": "system.codedom/4.4.0",
-      "hashPath": "system.codedom.4.4.0.nupkg.sha512"
+      "sha512": "sha512-CdkbBSPIpHD8xBlu+8kDJiqc1Tf9iV89BObnqcvEbwysXSj5h1MfaeLgeeaxPZmi7CTJO8FDofBBNxBW0Vml7A==",
+      "path": "sharpziplib/1.4.0",
+      "hashPath": "sharpziplib.1.4.0.nupkg.sha512"
+    },
+    "SkiaSharp/2.88.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wdfeBAQrEQCbJIRgAiargzP1Uy+0grZiG4CSgBnhAgcJTsPzlifIaO73JRdwIlT3TyBoeU9jEqzwFUhl4hTYnQ==",
+      "path": "skiasharp/2.88.6",
+      "hashPath": "skiasharp.2.88.6.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.Linux.NoDependencies/2.88.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ecgMclPor+X1wi2dZSVDo1sV2Dm8gwEKNRtS+qiE9qfnQzGHbYWlbTBWalnZBaIl3BLC21b1QO8gMgabhSAh+g==",
+      "path": "skiasharp.nativeassets.linux.nodependencies/2.88.6",
+      "hashPath": "skiasharp.nativeassets.linux.nodependencies.2.88.6.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.macOS/2.88.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Sko9LFxRXSjb3OGh5/RxrVRXxYo48tr5NKuuSy6jB85GrYt8WRqVY1iLOLwtjPiVAt4cp+pyD4i30azanS64dw==",
+      "path": "skiasharp.nativeassets.macos/2.88.6",
+      "hashPath": "skiasharp.nativeassets.macos.2.88.6.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.Win32/2.88.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7TzFO0u/g2MpQsTty4fyCDdMcfcWI+aLswwfnYXr3gtNS6VLKdMXPMeKpJa3pJSLnUBN6wD0JjuCe8OoLBQ6cQ==",
+      "path": "skiasharp.nativeassets.win32/2.88.6",
+      "hashPath": "skiasharp.nativeassets.win32.2.88.6.nupkg.sha512"
+    },
+    "System.Buffers/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "path": "system.buffers/4.5.1",
+      "hashPath": "system.buffers.4.5.1.nupkg.sha512"
+    },
+    "System.CodeDom/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gqpR1EeXOuzNQWL7rOzmtdIz3CaXVjSQCiaGOs2ivjPwynKSJYm39X81fdlp7WuojZs/Z5t1k5ni7HtKQurhjw==",
+      "path": "system.codedom/4.5.0",
+      "hashPath": "system.codedom.4.5.0.nupkg.sha512"
     },
     "System.Collections.Immutable/1.5.0": {
       "type": "package",
@@ -618,6 +1092,13 @@
       "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
       "path": "system.memory/4.5.5",
       "hashPath": "system.memory.4.5.5.nupkg.sha512"
+    },
+    "System.Numerics.Tensors/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fhODzTe9ON9IzmRfyVeA6L8yXOciMtpq1YufkRVBliggcVKZE+XDxqIn46+yF4PWR6wNPuDpXtPpuY86VcKxUA==",
+      "path": "system.numerics.tensors/8.0.0",
+      "hashPath": "system.numerics.tensors.8.0.0.nupkg.sha512"
     },
     "System.Reflection/4.3.0": {
       "type": "package",
@@ -682,6 +1163,20 @@
       "path": "system.text.encoding/4.3.0",
       "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
     },
+    "System.Text.Encodings.Web/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Vg8eB5Tawm1IFqj4TVK1czJX89rhFxJo9ELqc/Eiq0eXy13RK00eubyU6TJE6y+GQXjyV5gSfiewDUZjQgSE0w==",
+      "path": "system.text.encodings.web/6.0.0",
+      "hashPath": "system.text.encodings.web.6.0.0.nupkg.sha512"
+    },
+    "System.Text.Json/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X3cTdM+jna1YyfTUzToW7aVgINFv7R1W4+1+3hua/YCyLjApPoR8fd+2Cep9DbfYjbv+rBx4K6dlmAWEJr9AHg==",
+      "path": "system.text.json/6.0.1",
+      "hashPath": "system.text.json.6.0.1.nupkg.sha512"
+    },
     "System.Threading.Channels/4.7.1": {
       "type": "package",
       "serviceable": true,
@@ -702,6 +1197,20 @@
       "sha512": "sha512-8svOVEjS1CV5JDnUUuFKwvbM2q8KSaqUR7rFo3Ht/duACtY58lZS4Q6hwu2GeWm8gRvhJIrNngIrDbsWMbDvyg==",
       "path": "tensorflow.net/0.20.1",
       "hashPath": "tensorflow.net.0.20.1.nupkg.sha512"
+    },
+    "TorchSharp/0.101.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iKZyVgf3vJpVlU4rH94zr2K8mAhFslO2+htHCMoBRU089sjGnLarLvJT2KFDOOahsB0SZEsPFkScsAsj3iqj/A==",
+      "path": "torchsharp/0.101.5",
+      "hashPath": "torchsharp.0.101.5.nupkg.sha512"
+    },
+    "TorchSharp-cpu/0.101.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p1+pYO1MyrC6LT5suhu/SpserikhcP+JM9ic49+iNsU+LWW9y+UNZcjr4Nldy4g6Uz63qhFImINfWBQ1PXUBjw==",
+      "path": "torchsharp-cpu/0.101.5",
+      "hashPath": "torchsharp-cpu.0.101.5.nupkg.sha512"
     }
   }
 }
