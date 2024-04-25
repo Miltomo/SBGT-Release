@@ -1,3 +1,5 @@
+#### ⚠️点此查看[源代码版本](https://github.com/Miltomo/Shining-BeautifulGirls-Tools)，本项目不再维护⚠️
+---
 ## 简介
 SBGT(Shining!BeautifulGirls-Tools)，是本人自用自制的手游《闪耀！优俊少女》（国服赛马娘）的辅助工具。  
 主要用途是自动化操作。减轻游玩负担，拒绝重复劳动。  
